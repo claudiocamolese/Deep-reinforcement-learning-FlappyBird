@@ -1,0 +1,31 @@
+flappy_bird_advanced:
+  env_id: FlappyBird-v0
+  learning_rate_a: 0.00025
+  discount_factor_g: 0.99
+  network_sync_rate: 1000
+  replay_memory_size: 100000
+  mini_batch_size: 64
+  epsilon_init: 1.0
+  epsilon_decay: 0.99995
+  epsilon_min: 0.05
+  stop_on_reward: 100
+  fc1_nodes: 512
+  enable_double_dqn: true
+  enable_dueling_dqn: true
+
+flappybird1:
+  env_id: FlappyBird-v0
+  replay_memory_size: 100000
+  mini_batch_size: 32
+  epsilon_init: 1
+  epsilon_decay: 0.99_99_5
+  epsilon_min: 0.05
+  network_sync_rate: 10
+  learning_rate_a: 0.0001
+  discount_factor_g: 0.99
+  stop_on_reward: 100000
+  fc1_nodes: 512
+  env_make_params:
+  use_lidar: False
+  enable_double_dqn: True
+  enable_dueling_dqn: True  
