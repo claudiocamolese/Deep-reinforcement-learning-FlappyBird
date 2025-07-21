@@ -50,6 +50,8 @@ class Agent:
         
         self.hyperparameter_set = hyperparameter_set
         
+        ## LOAD HYPERPARAMETERS
+        
         # Environment parameters
         self.env_id = hyperparameters['env_id']
         self.env_make_params = hyperparameters.get('env_make_params', {})

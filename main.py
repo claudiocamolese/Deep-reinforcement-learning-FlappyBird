@@ -16,6 +16,7 @@ os.makedirs(RUNS_DIR, exist_ok=True)
 
 
 def main():
+    os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
     """Main function to parse arguments and execute training or validation."""
     parser = argparse.ArgumentParser(description='Train or test DQN model.')
     parser.add_argument('hyperparameters', help='Hyperparameter set name from hyperparameters.yml')

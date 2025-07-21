@@ -2,16 +2,6 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
-
-import torch
-from torch import nn
-import torch.nn.functional as F
-
-import torch
-from torch import nn
-import torch.nn.functional as F
-
-
 class DQN(nn.Module):
     """
     Deep Q-Network with optional Dueling architecture and Dropout.
@@ -31,13 +21,13 @@ class DQN(nn.Module):
 
         # Shared feature extractor: 3 hidden layers
         self.fc1 = nn.Linear(state_dim, hidden_dim)
-        self.dropout1 = nn.Dropout(p=0.2)
+        self.dropout1 = nn.Dropout(p=0.1)
 
         self.fc2 = nn.Linear(hidden_dim, hidden_dim)
-        self.dropout2 = nn.Dropout(p=0.2)
+        self.dropout2 = nn.Dropout(p=0.1)
 
         self.fc3 = nn.Linear(hidden_dim, hidden_dim)
-        self.dropout3 = nn.Dropout(p=0.2)
+        self.dropout3 = nn.Dropout(p=0.1)
 
         if self.enable_dueling_dqn:
             # Value stream: V(s)
