@@ -28,6 +28,16 @@ $$
 Q(s,a)\gets Q(s,a) + \alpha(r+ \gamma \underset{a'}{max} Q(s', a', \theta^-) - Q(s,a; \theta))
 $$
 
+Where:
+
+- \( \theta \) are the weights of the main Q-network,
+- \( \theta^- \) are the weights of the target Q-network,
+- \( s \) is the current state,
+- \( a \) is the action taken,
+- \( r \) is the reward received,
+- \( s' \) is the next state,
+- \( \max_{a'} Q(s', a') \) is the maximum Q-value for the next state.
+
 ### Dueling Deep Q-Network (Dueling DQN)
 
 Dueling DQN is an improvement over the standard DQN architecture that separately estimates the **state value** and the **advantage** for each action. Instead of directly outputting Q-values for each action, the network is split into two streams: one calculates the value of being in a particular state (V(s)), and the other estimates the advantage of each action in that state (A(s,a)). These two streams are then combined to produce the final Q-values. This separation helps the network learn which states are valuable without needing to learn the effect of each action in every state, often leading to faster and more stable learning, especially in environments where some actions do not affect the outcome much.
