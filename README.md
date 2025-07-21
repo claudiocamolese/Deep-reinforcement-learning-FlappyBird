@@ -30,13 +30,13 @@ $$
 
 Where:
 
-- \( \theta \) are the weights of the main Q-network,
-- \( \theta^- \) are the weights of the target Q-network,
-- \( s \) is the current state,
-- \( a \) is the action taken,
-- \( r \) is the reward received,
-- \( s' \) is the next state,
-- \( \max_{a'} Q(s', a') \) is the maximum Q-value for the next state.
+- \($\theta$\) are the weights of the main Q-network,
+- \( $\theta^-$ \) are the weights of the target Q-network,
+- \( $s$\) is the current state,
+- \( $a$ \) is the action taken,
+- \( $r$ \) is the reward received,
+- \( $s'$ \) is the next state,
+- \( $\max_{a'} Q(s', a')$ \) is the maximum Q-value for the next state.
 
 ### Dueling Deep Q-Network (Dueling DQN)
 
