@@ -4,6 +4,12 @@ Deep Q-Learning, also known as Deep Q-Network (DQN), is an extension of the clas
 
 ---
 
+## Project
+The main goal of this repository is to get hands-on experience with reinforcement learning by building a first practical project: teaching an agent to play **Flappy Bird** using Deep Q-Learning. This simple yet illustrative example helps to understand the core concepts of RL through a classic game environment.
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/2b641aaa-f781-46a2-a227-3fe32983cea1" />
+
+
 ## Main Ideas Behind Deep Q-Learning
 
 ### Neural Network for Q-Value Approximation  
