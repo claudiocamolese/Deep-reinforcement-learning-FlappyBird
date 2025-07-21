@@ -6,6 +6,7 @@ import gymnasium as gym
 from dqn import DQN
 from experience_replay import ReplayMemory
 import flappy_bird_gymnasium
+from torch import nn
 
 
 class Agent:
